@@ -3,6 +3,16 @@ import Layout from '../components/Layout.astro';
 import Button from '../components/Button';
 ---
 
+<script>
+	const crewStats = await fetch('/crew-stats')
+		.then((res) => res.json())
+		.catch((error) => {
+			console.error(`Something went wrong: ${error}`);
+		});
+
+	console.log(crewStats);
+</script>
+
 <Layout title="Netlify Edge functions with Astro">
 	<main>
 		<h1>Netlify Edge Functions with Astro</h1>
