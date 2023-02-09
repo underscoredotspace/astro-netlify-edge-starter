@@ -4,7 +4,7 @@ import Button from '../components/Button';
 ---
 
 <script>
-	const crewStats = await fetch('/crew-stats')
+	const crewStats = await fetch('/crew-stats.json')
 		.then((res) => res.json())
 		.catch((error) => {
 			console.error(`Something went wrong: ${error}`);
