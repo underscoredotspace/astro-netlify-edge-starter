@@ -8,4 +8,4 @@ path = "/"
 function = "geolocation"
 
 path = "/crew-stats.json"
-function = "crew-stats
+function = "crew-stats"
