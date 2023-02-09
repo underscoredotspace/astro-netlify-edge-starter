@@ -7,5 +7,6 @@ publish = "dist/"
 path = "/"
 function = "geolocation"
 
+[[edge_functions]]
 path = "/crew-stats.json"
 function = "crew-stats"
